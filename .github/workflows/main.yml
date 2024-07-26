@@ -1,0 +1,21 @@
+name: Selenium_Test
+on: push
+
+jobs:
+  Selenium_Test:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v4.1.7
+      - name: Execute Javascript
+        uses: amochkin/action-javascript@v1
+      - name: run a Selenium scripts
+        run: Selenium test.js
+
+        
+      
+    
+     
+   
